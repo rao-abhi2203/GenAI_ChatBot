@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="card shadow-lg p-4 rounded-4" style="width: 400px;">
+    <div class="card-body text-center">
+      <h2 class="text-primary mb-3">👋 You have been logged out</h2>
+      <p class="text-muted">Thanks for using our Chatbot.  
+      You can log back in or create a new account below.</p>
+      
+      <div class="d-flex justify-content-around mt-4">
+        <a href="{% url 'login' %}" class="btn btn-outline-primary btn-lg px-4">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg px-4">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
