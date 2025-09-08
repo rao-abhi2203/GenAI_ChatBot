@@ -16,7 +16,11 @@ import os
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['*']  # later you can restrict to Render domain
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "genaichatbot-cubt.onrender.com",  # 👈 add your Render domain here
+] # later you can restrict to Render domain
 
 
 
