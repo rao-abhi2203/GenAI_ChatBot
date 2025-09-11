@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 from decouple import config
 import os
- 
+
 # settings.py
 
 
@@ -22,7 +22,6 @@ import os
 #     "127.0.0.1",
 #     "genaichatbot-cubt.onrender.com",  # 👈 add your Render domain here
 # ] # later you can restrict to Render domain
-
 
 
 GENAI_API_KEY = config("GENAI_API_KEY")
