@@ -16,7 +16,7 @@ import os
  
 # settings.py
 ALLOWED_HOSTS = [h.strip() for h in config(
-    "ALLOWED_HOSTS", default="localhost,127.0.0.1"
+    "ALLOWED_HOSTS", default="localhost,127.0.0.1,genaichatbot-cubt.onrender.com"
 ).split(",")]
 DEBUG = False
 
