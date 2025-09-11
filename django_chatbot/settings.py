@@ -14,12 +14,11 @@ from pathlib import Path
 from decouple import config
 import os
  
-
-DEBUG = False
 # settings.py
 ALLOWED_HOSTS = [h.strip() for h in config(
     "ALLOWED_HOSTS", default="localhost,127.0.0.1"
 ).split(",")]
+DEBUG = False
 
 # ALLOWED_HOSTS = [
 #     "localhost",
