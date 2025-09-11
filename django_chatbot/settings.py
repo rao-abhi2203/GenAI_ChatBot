@@ -15,10 +15,7 @@ from decouple import config
 import os
  
 # settings.py
-ALLOWED_HOSTS = [h.strip() for h in config(
-    "ALLOWED_HOSTS", default="localhost,127.0.0.1,genaichatbot-cubt.onrender.com"
-).split(",")]
-DEBUG = False
+
 
 # ALLOWED_HOSTS = [
 #     "localhost",
@@ -41,10 +38,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ALLOWED_HOSTS = [h.strip() for h in config(
+    "ALLOWED_HOSTS", default="localhost,127.0.0.1,genaichatbot-cubt.onrender.com"
+).split(",")]
 
-ALLOWED_HOSTS = []
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
 
 # Application definition
